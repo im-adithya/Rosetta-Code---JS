@@ -1,0 +1,8 @@
+function sumDigits(n) {
+  n = n.toLowerCase()
+  var sum = 0
+  for (let i = 0; i < n.length; i++) {
+    sum += (n.charCodeAt(i)>96)?n.charCodeAt(i)-87:n.charCodeAt(i)-48
+  }
+  return sum
+}

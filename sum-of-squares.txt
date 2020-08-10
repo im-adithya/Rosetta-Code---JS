@@ -1,0 +1,8 @@
+function sumsq(array) {
+  // Good luck!
+  var sum = 0
+  array.forEach((a,i) => {
+    sum += Math.pow(a,2)
+  })
+  return sum
+}

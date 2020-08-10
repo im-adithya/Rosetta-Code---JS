@@ -1,0 +1,6 @@
+function sumMults(n) {
+  var t = (n%3==0)?Math.floor((n-1)/3):Math.floor(n/3)
+  var f = (n%5==0)?Math.floor((n-1)/5):Math.floor(n/5)
+  var ft = (n%15==0)?Math.floor((n-1)/15):Math.floor(n/15)
+  return 3*((t*(t+1))/2) + 5*((f*(f+1))/2) - 15*((ft*(ft+1))/2)
+}
